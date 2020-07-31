@@ -72,9 +72,11 @@ echo '</select>';
                         <table>
                         <tbody>
                             <tr class="row100 body">
-                                <td class="cell100 column1"><?php echo $codModulo;?> </td>
-                                <td class="cell100 column2"><?php echo $nombreModulo;?></td>
-                                <td class="cell100 column3"><?php echo $estadoModulo;?></td>
+                                <td class="cell100 column1"><?php echo $codFuncionaldad;?> </td>
+                                <td class="cell100 column2"><?php echo $codModulo;?></td>
+                                <td class="cell100 column3"><?php echo $URL;?></td>
+                                <td class="cell100 column3"><?php echo $nombreFuncionalidad;?></td>
+                                <td class="cell100 column3"><?php echo $Descripcion;?></td>
                                 <td class="cell100 column5"><a href="modulo.php?editar=<?php echo $codModulo; ?>"><i class="fas fa-edit"></i></a></td>
                                 <td class="cell100 column6"><a href="modulo.php?borrar=<?php echo $codModulo; ?>"><i class="fas fa-minus-circle"></i></a></td>
                             </tr>
