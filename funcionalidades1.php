@@ -45,22 +45,26 @@ echo '</select>';
                     <table>
                         <thead>
                             <tr class="row100 head">
-                                <th class="cell100 column1">CódigoModulo</th>
-                                <th class="cell100 column2">Nombre</th>
-                                <th class="cell100 column3">Estado</th>
+                                <th class="cell100 column1">CódigoFuncionalidad</th>
+                                <th class="cell100 column2">CodigoModulo</th>
+                                <th class="cell100 column3">URL</th>
+                                <th class="cell100 column3">Nombre</th>
+                                <th class="cell100 column3">Descripcion</th>
                                 <th class="cell100 column3">Opciones</th>
                             </tr>
                         </thead>
                     </table>
                     </div>
                     <?php
-                    $consulta = "SELECT * FROM SEG_MODULO";
+                    $consulta = "SELECT * FROM SEG_FUNCIONALIDAD";
                     $ejecutar = mysqli_query($conex,$consulta);
                     $i=0;
                     while($fila = mysqli_fetch_array($ejecutar)){
+                        $codFuncionaldad=$fila['COD_FUNCIONALIDAD'];
                         $codModulo=$fila['COD_MODULO'];
-                        $nombreModulo=$fila['NOMBRE'];
-                        $estadoModulo=$fila['ESTADO'];
+                        $URL=$fila['URL_PRINCIPAL'];
+                        $nombreFuncionalidad=$fila['NOMBRE'];
+                        $Descripcion=$fila['DESCRIPCION'];
                         $i++;
 
                     ?>
