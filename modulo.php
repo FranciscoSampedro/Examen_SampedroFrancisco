@@ -79,11 +79,12 @@
     </div>
     <?php
     if(isset($_GET['borrar'])){
-        $borrar_codProduct = $_GET['borrar'];
-        $borrar = "DELETE FROM PRODUCTOS WHERE CODPRODUCT= $borrar_codProduct";
+        
+        $borrar_codModulo = mysqli_real_escape_string($conex,$_GET['borrar']);
+        $borrar = "DELETE FROM SEG_MODULO WHERE COD_MODULO= '$borrar_codModulo' ";
         $ejecutar=mysqli_query($conex,$borrar);
         if($ejecutar){
-            echo "<script>alert('El Producto ha sido Eliminado!')</script>";
+            echo "<script>alert('El MODULO ha sido Eliminado!')</script>";
             echo "<script> window.open('modulo.php','_self')</script>";
         }
     }
