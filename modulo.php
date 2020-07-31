@@ -15,7 +15,9 @@
     <script src="https://kit.fontawesome.com/a3c8e6637e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <br/>
+    <h1>Gestion de Modulo</h1>
     <div class="cabezera">
     <a class="cab" href="modulo.php?insert1">Agregar<i class="far fa-plus-square" ></i></a>
     </div>
